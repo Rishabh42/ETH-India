@@ -395,12 +395,12 @@ contract ProxyCreationAndExecute is OasisDirectProxy {
 
 contract MyContract
 {
-    DaiContract dai = DaiContract(0xc4375b7de8af5a38a93548eb8453a498222c4ff2);
+    DaiContract dai = DaiContract(0xC4375B7De8af5a38a93548eb8453a498222C4fF2);
 
-    function foo(uint amt) public
+    function _payment(uint amt, address _to) public
     {
-        require(dai.balanceOf(msg.sender) >= amt && dai.allowance(msg.sender, address(this)) >= amt);
-        dai.transferFrom(msg.sender, address(this), amt);
+        //require(dai.balanceOf(msg.sender) >= amt && dai.allowance(msg.sender, address(this)) >= amt);
+        dai.transferFrom(msg.sender, _to, amt);
 
     }
 }
