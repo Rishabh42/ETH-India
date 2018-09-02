@@ -1,0 +1,11 @@
+Award winning project at ETHIndia Hackathon.
+
+CryptoMedia
+A platform to store media files as ERC-721 assets so that the content can be used as "crypto assets" on the blockchain network, thus allowing trading, renting and selling to the consumers using Dai.
+
+
+The problem it solves
+Protects Copyright of the author’s content, provides the functionality to monitor realtime updates from the Ethereum blockchain by using Matic Dagger and uses a robust and stable crypto payment solution using Dai.
+
+When the author uploads the content on the network, the content is not stored in it's true form, rather it is encrypted using AES algorithm using a secret key (undisclosed) and then stored on the network. When the consumer buys the token (content), the ownership of the token is transferred to the consumer and the content is provided to the consumer through an isolated environment (web app). The consumer can download the encrypted content but cannot access it through any other means except the web app itself.
+the purchases of the consumer is listed on the app and when the person wishes to access it, the app decrypts the file using the secret key and creates a temporary copy of the file which the user can view on the app. As soon as the viewer closes the file, the temporary copy is again deleted. This ensures the authenticity of the content.
